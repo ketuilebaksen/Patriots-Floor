@@ -1,0 +1,98 @@
+PATRIOTS FLOOR — KANAL KURULUMU
+================================
+
+Takim: New England Patriots | Stadyum: Gillette Stadium
+Kadro 2026 sezonuna gore: Drake Maye, A.J. Brown, Rhamondre Stevenson,
+TreVeyon Henderson, Christian Gonzalez, Milton Williams — bas antrenor
+MIKE VRABEL, hucum koordinatoru Josh McDaniels, kadrodan sorumlu Eliot Wolf.
+
+Depoyu actin: Patriots-Floor. Icinde README var, yani push ederken
+"unrelated histories" hatasi cikacak — cozumu ADIM 3'te.
+
+Paket Third Floor ile ayni, yani yeni ozelliklerin hepsi iceride:
+havuz ornekleme, sahne cesitliligi, muzik duzeltmeleri.
+
+
+A.J. BROWN NOTU
+---------------
+A.J. Brown artik Patriots oyuncusu — Haziran'da Eagles'tan takasla geldi.
+Su an yuksek ayak bilegi burkulmasiyla sakatlik listesinde, 6. hafta
+civari donmesi bekleniyor. Kadroya ekledim cunku videolarda konusulacak.
+
+BUNUN BIR YAN ETKISI VAR: Eagles kanalinin channel.json'unda A.J. Brown
+hala Eagles kadrosunda duruyor, benim hatam. Orada sadece Wikimedia'dan
+fotograf cekmek icin kullaniliyor, videoyu bozmuyor ama yanlis. Istersen
+Eagles icin duzeltilmis channel.json gonderirim.
+
+
+ADIM 1 — BILGISAYARINA INDIR
+----------------------------
+github.com/ketuilebaksen/Patriots-Floor -> Code -> Open with GitHub Desktop
+
+
+ADIM 2 — DOSYALARI KOPYALA
+--------------------------
+Bu zip'in icindekileri (OKU.txt haric) o klasore kopyala.
+
+Klasorde su kalmali:
+  .git  .github  assets  content  scripts  .gitignore  channel.json
+
+.github ve content Windows'ta gizli gorunebilir — "Hidden items" kutusunu ac.
+
+GitHub Desktop -> Summary: "ilk kurulum" -> Commit to main
+
+
+ADIM 3 — PUSH (README yuzunden)
+-------------------------------
+Push origin'e basinca "Unable to merge unrelated histories" ya da
+"Newer commits on remote" diyecek. Pull / Fetch'e BASMA, Cancel de.
+
+Repository -> Open in Command Prompt   (Ctrl + `)
+Acilan pencereye:
+
+  git push --force origin main
+
+Enter. Sonra GitHub Desktop'ta Ctrl + R ile yenile.
+
+Uzaktaki depoda tek commit var ve icinde sadece README.md — kontrol ettim,
+uzerine yazmakta kayip yok.
+
+
+ADIM 4 — IZIN (sart)
+--------------------
+Settings -> Actions -> General -> en altta "Workflow permissions"
+"Read and write permissions" sec -> Save
+
+
+ADIM 5 — STOK VIDEOLARI YUKLE
+-----------------------------
+Releases -> Create a new release
+  Tag / Title : broll
+  Dosya       : Patriots stok videolarini surukle
+  ---> "Publish release"   ("Save draft" e BASMA)
+
+Dolunca broll2, broll3 diye devam et.
+Istege bagli:  music   ambient   photos
+
+music'e hem mp3 hem wav atabilirsin, sistem ayni parcanin kopyalarini
+birlestiriyor.
+
+
+ADIM 6 — ILK VIDEO
+------------------
+Ses otomasyonunda kanal listesine ekle, depo adi: Patriots-Floor
+
+Render kaydinda goreceklerin:
+  STOK HAVUZU: ... klipten 320 tanesi bu video icin secildi
+  [assemble] sahne cesitliligi: ... farkli cekim ailesi
+  [assemble] music bed: ... parca, ... kez eklendi
+  [assemble] DONE -> work/final.mp4
+
+"b-roll: 0 clips" yaziyorsa broll release'i taslakta kalmis demektir.
+
+
+ISTEGE BAGLI — TEK OYUNCUYA OZEL HAVUZ
+--------------------------------------
+  Release tag : oyuncu-drake-maye   (ya da takim-new-england-patriots)
+  Icine en az 12 klip koy, Publish et.
+Metinde o isim en cok geciyorsa video sadece o havuzdan kurulur.
